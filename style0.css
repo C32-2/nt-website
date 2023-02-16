@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+*::before{
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    /*height: 50%;*/
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #333;
+    background-color: #1d1d1d;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    width: 100%;
+}
+
+.base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main_nav {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header_logo {
+    font-weight: 900;
+    font-size: 40px;
+    color: #e8e8e8;
+    padding-top: 30px;
+}
+
+.logo_link {
+    text-decoration: none;
+}
+
+.main_link {
+    color: #5b5b5b;
+    text-decoration: none;
+    transition: color 0.125s linear;
+
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 0 50px;
+    margin-right: 0;
+    padding-top: 30px;
+    position: relative;
+}
+
+.main_link::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    opacity: 0;
+
+    background-color: #e8e8e8;
+    position: absolute;
+
+    top: 100%;
+    z-index: 1;
+    left: 0%;
+
+    transition: opacity 0.125s linear;
+}
+
+.main_link:hover{
+    color: #e8e8e8;
+}
+
+.main_link:hover::after{
+    opacity: 1;
+}
+
+.main_image {
+    display: block;
+    height: 835px;
+    background: url(https://neurotyp-rock-band.ru/images/image_main.jpg) center no-repeat;
+    
+}
+.log {
+    display: block;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: 80px;
+}
+
+.about_one {
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    font-weight: 590;
+    padding-top: 100px;
+    color: #ebebeb;
+    font-size: 48px;
+    z-index: 100;
+}
+.about_two {
+    margin: 0;
+    text-align: center;
+    font-weight: 590;
+    padding-top: 10px;
+    color: #ebebeb;
+    font-size: 30px;
+    z-index: 100;
+    
+}
+
+.info_container {
+    margin: 0 auto;
+    max-width: 870px;
+    width: 100%;
+    color: #7d7d7d;
+}
+
+.info_main {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+}
+
+.info_sec {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.members {
+    margin: 0;
+    color: #7d7d7d;
+    
+}
+
+.m_link {
+    text-decoration: underline;
+    color: #e8e8e8;
+}
+
+.footer {
+    background-color: #272727;
+    color: #7d7d7d;
+    height: 200px;
+    
+}
+
+.soc_text {
+    /*margin-left: 0;*/
+    padding-top: 20px;
+}
+
+.soc_logo {
+    margin: 0 50px;
+    size: 30%;
+    width: 60px;
+    transition: filter 0.125s linear;
+    height: 60px;
+    position: relative;
+    top: 65px;
+    margin-left: 0;
+}
+
+.soc_logo:hover {
+    filter:brightness(2.5)
+}
+
+.f_container {
+    margin: 0 auto;
+    max-width: 870px;
+    width: 100%;
+}
+
+.copyright {
+    padding-top: 30px;
+    position: absolute;
+    left: 58%;
+}
+
+.news {
+    color: #7d7d7d;
+}
+
+.to_index {
+    text-decoration: underline;
+    color: #e8e8e8;
+}
+
+.image_dec {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5rem dashed white;
+    width: 70%;
+    margin-bottom: 60px;
+}
+
+.mus_logo {
+    margin: 0 50px;
+    size: 30%;
+    width: 60px;
+    transition: filter 0.125s linear;
+    height: 60px;
+    position: relative;
+    margin-left: 0;
+}
+
+.mus_logo:hover {
+    filter:brightness(2.5)
+}
